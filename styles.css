@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to top left, rgb(144, 238, 172), pink);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+.container__slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.5s cubic-bezier(.46, .61, .51, .76);
+}
+.container__slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.container__slide.active {
+  flex: 10;
+}
+.container__slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s ;
+}
+.container__slide_Mauritius {
+  background-image: url('https://images.unsplash.com/flagged/photo-1587843734892-d18f1e98e17b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3024&q=80');
+}
+.container__slide_BoraBora {
+  background-image: url('https://images.unsplash.com/photo-1580725869538-9b164c27c44f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2664&q=80');
+}
+.container__slide_Seychelles {
+  background-image: url('https://images.unsplash.com/photo-1577353716826-9151912dcdd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80');
+}
+.container__slide_Maldives {
+  background-image: url('https://images.unsplash.com/photo-1540202404-a2f29016b523?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2533&q=80');
+}
+.container__slide_Philippines {
+  background-image: url('https://images.unsplash.com/photo-1581390881194-e38689620e22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2534&q=80');
+}
